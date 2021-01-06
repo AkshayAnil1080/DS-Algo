@@ -68,6 +68,69 @@ public class Graph {
 		return distance;
 		
 	}
+	
+	// 6. making recursive function of dfsUtil : DFS gaurantees the path exists or not, it may not give the shortest pat between the nodes. => function is boolean
+	// arguments : source, destination and visited array for backtracking from visited nodes
+	// now apply dfs on neighbours of each source.. and if the neighbour  is not visited , 
+	// then we will check if via this neighbour can we the destination, so calling the dfs function recursively, and forget what this f(n) will do, have the recursive leap of faith.
+	// it will give a true or false value, so this neighbour is connected to the dest, it will return true, else the f(n) line86 is itself in the for loop, it will work for next of the neighbours.
+	// so after finishing the loop, if still not get the dest, it will return false.
+	private boolean dfsUtil(int source , int destination, boolean vis[])
+		{
+		if (source == destination) return true;  // base case
+		
+		for( int neighbour: adj[source])
+			{
+				if(!vis[neighbour])
+				{
+					vis[neighbour] = true;
+					boolean isConnected = dfsUtil(neighbour, destination, vis);
+					if(isConnected) return true;
+				}
+			}
+
+		return false;
+		}
+	
+	// 6a. we have to crate a visited boolean array for dfsutil as i dont want to this work from main.
+	public boolean dfs( int source, int destination) {
+	    boolean vis[] = new boolean[adj.length];
+		vis[source] = true;
+		return dfsUtil(source, destination, vis);
+	}
+	
+	//6b lets see how dfs is implemented with stack 
+	// will have source and dest as arg , and a boolean visited array is req.
+	// creating a stack and push the source. 
+	// and keep on popping the top element=curr and pushing its neighbours, marking them as visited till(while loop) stack is not empty
+	//and add a base condition, if curr == dest  return true line(118) else no path is possible it will return false(130)
+	public boolean dfsStack(int source, int destination)
+	{
+		boolean vis[] = new boolean[adj.length];
+		vis[source] = true;
+		Stack<Integer> stack = new Stack<>();
+		
+		stack.push(source);
+		
+		while(!stack.isEmpty())
+			{
+				int curr = stack.pop();
+				
+				if( curr == destination) return true; // base
+				for ( int neighbour : adj[curr])
+					{
+						if(!vis[neighbour])
+							{
+								vis[neighbour] = true;
+							    stack.push(neighbour);
+							}
+					}
+			}
+		return false;
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method st ub
 		// 3. implementing main
@@ -94,8 +157,14 @@ public class Graph {
 		System.out.println("Enter source and destination");
 		int source = sc.nextInt();
 		int destination  = sc.nextInt();
-		int distance =  graph.bfs(source, destination);
-		System.out.println("min distance is " + distance);
+		
+//		int distance =  graph.bfs(source, destination);
+//		System.out.println("min distance is " + distance);
+		
+//	    System.out.println("possible " + graph.dfs(source, destination)); 
+		
+	System.out.println("possible " + graph.dfsStack(source, destination)); // dfs with stack
 	}
 
 }
+
