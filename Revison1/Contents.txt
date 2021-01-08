@@ -4,10 +4,19 @@ Date: 07-01-2021
 2. HELLO WROLD - program 1.
 3. Past/Pre Increment  - program 1.
 4. Type Casting - program 1.
- Program 2. calcualte SI
+5. Switch Cases - Program 2. calcualte SI
  Program 3. Problem in input a String after a number
  Progrma 4. find the greatest of three numbers using terenary.
  Program 5. Make a Calculator
 
 Codechef : long challenge two Questions... solved.. 
 https://www.codechef.com/users/crazy_romeo
+
+Date: 08-01-2021
+6 Loops - for Loop
+ Program 6. Factorial
+ Program 7. Fibonacci
+ Program 8. Prime or not
+ Program 9. sum series type 1
+ Program 10. Sum series type 2
+ 
