@@ -19,4 +19,59 @@ Date: 08-01-2021
  Program 8. Prime or not
  Program 9. sum series type 1
  Program 10. Sum series type 2
+
+Date 09-01-2021
+ Program 11. Use of break.
+ Program 12. Pattern1
+//	* 
+//	* * 
+//	* * * 
+//	* * * * 
+
+ Program 13. Pattern2
+//	* * * * * 
+//	  * * * * 
+//	    * * * 
+//	      * * 
+//	        * 	
+
+ Program 14. Pattern3
+//	* * * * * 
+//	* * * * 
+//	* * * 
+//	* * 
+//	* 
+ Program 15. Pattern4
+//		* 
+//	      * * 
+//	    * * * 
+//	  * * * * 
+//	* * * * * 
+ Program 16. Pattern5
+//		 *   
+//	       *   *   
+//	     *   *   *   
+//	   *   *   *   *   
+//	 *   *   *   *   *   
+ Program 17. Pattern6
+//		  1   
+//		2   3   
+//	      4   5   6   
+//	   7   8   9   10   
+//	11   12   13   14   15  
+ Program 18. Pattern7
+//	* 
+//	* * 
+//	* * * 
+//	* * * * 
+//	* * * * * 
+//	* * * 
+//	* * 
+//	* 
+ Program 19. Pattern8
+//	* 
+//	* *
+//	*   *
+//	*     *
+//	* * * * * 
  
