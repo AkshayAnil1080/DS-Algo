@@ -73,5 +73,13 @@ Date 09-01-2021
 //	* *
 //	*   *
 //	*     *
-//	* * * * * 
+//	* * * * *
+
+
+Date 11-01-2021
+7: While Loops v/s do while
+8: Arrays
+ Program 20: find the number, sum, product of digits of number and reversal of the number
+ Program 21: Bubble Sort - Approach: Comparison - Best TC: O(n^2) - Worst TC: O(n^2)
+ Program 22: Selection Sort- Approach: Greedy - Best TC: O(n^2) - Worst TC: O(n^2)
  
