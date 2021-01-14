@@ -26,12 +26,16 @@ Scanner sc = new Scanner(System.in);
 			al[index] ++;
 			
 		}
+
+
 		for ( char s : b.toCharArray())
 		{
 			int index = (int) s;
 			al[index]--;
 			
 		}
+
+
 		
 		for(i=0 ; i<256 ; i++)  // checkin if each element in array is equal to zero...if one of the element existe not equal to zero , not anagram
 		{
