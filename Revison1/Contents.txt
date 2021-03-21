@@ -90,5 +90,24 @@ Date 11-01-2021
  Program 24: Anagrams in Strings :O(n^2) approoach 
  Program 25: Anagrams in Strings :O(n)  approoach
 
+10. ARRAY LIST: create re-sizeble arrays, i.e dynamiuc array.
+ program 26 : show all function of ArrayList - > add(element), addAll(collection), get(index), set(index, value), remove(index), removeAll, clear(), size(), contains(), isEmpty(), toArray()
+
+11. LinkedList:
+ program: how LinkedList is faster than ArrayList
+ program: implement a Linked List.
+ 23 LL programs :count number of Nodes-occurance of Integer in LL -delete alt nodes- identical Ll - add 1 to number in LL - sum of last N nodes - delete Middel of LL-
+ solved on gfg	implement stack using LL - merger two sorted LL - remove duplicates from unsorted/sorted LL - reverse LL - remove loop and detect loop -find middle of LL - nth node from end of LL -
+		inser in middle of LL - Node at a given  index - reverse a LL in groups if given size - find n/kth node in LL - insert in sorted list - pairwise swap elements - if LL is palindrome - 
+		multiple two LL - delete a node - delete N nodes after M nodes - remove every kth node 
+
+12. Vectors in java: synchronized thread safe - time consuming - not recommended - better to use ArrayList.
+13. Stacks: LIFO - 
+ program 50 - intro push-pop-pee
+ program 51 - implement stack using LL
+
+ program 52 - queue with LL , implement enqueue and dequeue.
+ program 53 - to find the top k max elemnet in array of n elements n=10,000 . Used Priority Queue to solve in nlogk.
+	
 
  
