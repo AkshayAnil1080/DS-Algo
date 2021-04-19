@@ -13,7 +13,7 @@ Implementation of Data structures And ALgorithms.
 	7. contains() 
 	8. clear()
 	9. isEmpty()
-	#### 10.traversal in set -1  - using iterators
+	10.traversal in set -1  - using iterators
     	while(i.hasNext())
 		System.out.print(i.next()+ " ")
 
@@ -32,6 +32,14 @@ Implementation of Data structures And ALgorithms.
 	6. replace(K,v)  - replace(K,Old_V,New_V)
 	7. remove(K) - remove(K,V)
 	8. keySet() -  values()   - entrySet()
-	#### 9. traversal in map 
+	9. traversal in map 
    	for( Entry<String, Integer> e :  m.entrySet())
 		System.out.println(e.getKey() +  " " +  e.getValue());
+
+#### COUNT DISTINCT ELEMENTS
+	NaiveM1 - TC:O(n^2) , ASC:O(1)
+	1. run two nested loops i, j : i from [0,n) - j from [0,i)
+	2. for each i, if arr[i] is not found again in range[0,i) - break jth loop and increment count for vice versa. 
+	3. return the count
+	EffecientM2 -  TC:O(n) , ASC:O(n)
+	1. Put all elements in HashSet and print the size.
