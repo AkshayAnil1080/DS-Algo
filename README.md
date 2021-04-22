@@ -43,3 +43,22 @@ Implementation of Data structures And ALgorithms.
 	3. return the count
 	EffecientM2 -  TC:O(n) , ASC:O(n)
 	1. Put all elements in HashSet and print the size.
+
+### Strings
+	String s1 ="Akshay"  - by literals -  just creates in string pool area
+	String s2 = "Akshay"
+	String s2 = new String("Akshay")  - by new object -  creates in both String pool and heap area
+	Functions :
+	1. s1.length()
+	2. s1.charAt(index)
+	3  s1.substring(k) - prints from [k,last]
+	4. s1.substring(int beginIndex, Int lastIndex) -  prints from [beginIndex,lastIndex)
+	5. s1.contains(s2) - boolean - if s2 is substring of s1
+	6. s1==s2 -  references are compared not the content  - true	
+	Eg . s1==s2 true - > s1==s3 - false;
+	6. s1.equals(s2) - comapre the content use equalsTo() or compare() - true
+	Eg . s1.equls(s2) - true - > s1.equals(s3) - true;
+	7. res = s1.compareTo(s2)  - if s1 lexographically greater then s2 , returns greater value else smaller value. If same returns 0.
+	Eg: a<b<c<d<e<.....lexographical order. Eg s1="geeks" , s2 ="for" returns +ve value;
+	8. s1.indexOf(s2,k)  - returns the 1st index of 1st kth occurence of s2 in s1
+	Eg. s1="richdadpoordad" , s2="dad" -> s1.indexOf(s2,2) -> 11.
