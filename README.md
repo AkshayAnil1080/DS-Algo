@@ -62,3 +62,17 @@ Implementation of Data structures And ALgorithms.
 	Eg: a<b<c<d<e<.....lexographical order. Eg s1="geeks" , s2 ="for" returns +ve value;
 	8. s1.indexOf(s2,k)  - returns the 1st index of 1st kth occurence of s2 in s1
 	Eg. s1="richdadpoordad" , s2="dad" -> s1.indexOf(s2,2) -> 11.
+
+### Queue - 
+	Interface implemented by following classes - LinkedList and ArrayDeque(one of the way is using circular Array)
+	1. enqueue()
+	2. dequeue()
+	3. size()
+	4. getFront()
+	5. getRear()
+	6. isFull()
+	7. isEmpty()
+	Functions that returns null v/s throws exception
+	8. peek()	-	element()
+	9. offer()	- 	add()
+	10. poll()	- 	remove()
