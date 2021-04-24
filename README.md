@@ -76,3 +76,30 @@ Implementation of Data structures And ALgorithms.
 	8. peek()	-	element()
 	9. offer()	- 	add()
 	10. poll()	- 	remove()
+
+### Array Deque: 
+	Time complexity if each operation is O(1) - beacause using Circular Array implementation - Amortized(on Average) 
+	It is a Queue specific class and do not have list functions
+	It is faster then LL as Array implementation is used. - Cache friendly.
+	Use AD as Stack : AD is faster then Standard Stack Class - because stack uses vector which is threadsafe and issue of overhead occurs.
+	Use AD as Queue : Queue used LL implementation where AD uses array implementation (faster)
+	Use AD as Deque : Deque implementaion - LL and AD(preferred and faster)
+	Methods : 
+	Throws exception	v/s	return false/null
+	addFirst()		-	offerFirst()
+	addLast()		-	offerLast()
+	removeFirst()		-	pollFirst()
+	removeLast()		-	pollLast()
+	getFirst()		-	peekFirst()
+	getLast()		-	peekLast()
+
+	Redundant functions - AD implements Queue Interface, Deque interface, and provides main finctionalities of Stack class.
+	Queue: it is a interface - insert at rear, delete from front - FIFO
+	add()  same as addLast()		-	offer() same as offerLast()
+	remove() same as removeFirst()		- 	poll()  same as pollFirst()
+	element() same asgetFirst		-	peek()  same as peekFirst()
+	
+	Stack : LIFO - it is not an interface- its a legacy class inherits vectors.
+	push() same as addFirst()
+	pop() same as removeFirst()
+	peek() same as peekFirst()
