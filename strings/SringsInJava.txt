@@ -1,0 +1,36 @@
+java use utf-16 coding to store the characters.
+
+
+2.String class  - string objects are immutable - they cannot be  modified - so thread safety is not req - they are automatically thread safe.
+once you create the str = geeks"
+we cannot change it to something else -  immutable
+if we wish to change it, we have to create a new class.
+All the functions, concat, toUpper, toLower, they return a new object- they dont modify the existing string, as string class is immutable
+
+
+so, if we want to modify the string, we have two mutable classes
+3.String Buffer 
+4.String Builder.
+
+Why we have two classes for the same thing?
+String Buffer is a thread safe class  - we can use when we have mutile threaded and we have the shared object of same buffer being used by multiple threads
+
+String Builder class is not therad safe  - its used only wihtin as thread.
+
+Why do we care about a class which is not thread safe ?
+because when we create thread safe class, that involves extra overhead which in contrast in not present in String builder.
+so if writing single threaded progrma which requires mutable string - use String Builder
+and id wriring multi threaded program which requires mutable string - use String Buffer
+and if we need immutable string -  use String Class
+
+Note
+Why need thread safe ?
+u need thread safety when one thread is modifiying this  particular object and another thread does not get the latest, updated object or try to modify at the same time.
+
+
+Hey i have been enrolled at gfg self pace course. This is one of the questions I was going through and i found a bug in it.
+https://practice.geeksforgeeks.org/problems/linear-probing-in-hashing-1587115620/1
+
+This is the question of Linear probing on gfg.
+And it is accepting wrong answers.
+
