@@ -103,3 +103,15 @@ Implementation of Data structures And ALgorithms.
 	push() same as addFirst()
 	pop() same as removeFirst()
 	peek() same as peekFirst()
+
+
+### Tree:
+	AVL Tree
+	A self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees cannot be more than one for all nodes.
+	
+	Red Black Tree
+	This is a self-balancing Binary Search Tree (BST) where every node follows the following rules:
+	1. Every node has a color either red or black.
+	2. The root of tree is always black.
+	3. There are no two adjacent red nodes (A red node cannot have a red parent or red child).
+	4.  Every path from a node (including root) to any of its descendant NULL node has the same number of black nodes.
