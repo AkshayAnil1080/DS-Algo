@@ -63,6 +63,9 @@ Implementation of Data structures And ALgorithms.
 	8. s1.indexOf(s2,k)  - returns the 1st index of 1st kth occurence of s2 in s1
 	Eg. s1="richdadpoordad" , s2="dad" -> s1.indexOf(s2,2) -> 11.
 
+	VVImp: convert array of char[] to String : String str = String.valueOf(char)
+	       Convert String(str) into  array of Charcters = char str[] = S.toCharArray();	
+
 ### Queue - 
 	Interface implemented by following classes - LinkedList and ArrayDeque(one of the way is using circular Array)
 	1. enqueue()
