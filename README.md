@@ -96,7 +96,7 @@ Implementation of Data structures And ALgorithms.
 	getFirst()		-	peekFirst()
 	getLast()		-	peekLast()
 
-	Redundant functions - AD implements Queue Interface, Deque interface, and provides main finctionalities of Stack class.
+	Redundant functions - AD implements(imp) deque interface imp Queue interface imp Collections , and provides main finctionalities of Stack class.
 	Queue: it is a interface - insert at rear, delete from front - FIFO
 	add()  same as addLast()		-	offer() same as offerLast()
 	remove() same as removeFirst()		- 	poll()  same as pollFirst()
@@ -106,6 +106,16 @@ Implementation of Data structures And ALgorithms.
 	push() same as addFirst()
 	pop() same as removeFirst()
 	peek() same as peekFirst()
+	 Traversing in a Deque
+	a. Using iteretors; from first to last
+		Iterator it = d.iterator();
+		while(it.hasNext())
+		println(it.next()+" ");
+
+		from last to first - Iterator it = d.descendingIterator();
+	b. using for loop - first to last
+		for( int x:d ) println(x+" ");
+	
 
 
 ### Tree:
