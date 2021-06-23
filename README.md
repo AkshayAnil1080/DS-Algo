@@ -64,7 +64,17 @@ Implementation of Data structures And ALgorithms.
 	Eg. s1="richdadpoordad" , s2="dad" -> s1.indexOf(s2,2) -> 11.
 
 	VVImp: convert array of char[] to String : String str = String.valueOf(char)
-	       Convert String(str) into  array of Charcters = char str[] = S.toCharArray();	
+	       Convert String(str) into  array of Charcters = char str[] = S.toCharArray();
+	       
+	String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences. It can  have characters 	and 		substrings inserted in the middle or appended to the end.
+	VVImp: convert array of integers into  String
+	StringBuffer s = new StringBuffer();
+        String str="";
+        s.append(arr[0]);
+        for( i =1;i <n ; i++)
+            s.append(str).append(arr[i]);
+ 	return  s.toString();
+     
 
 ### Queue - 
 	Interface implemented by following classes - LinkedList and ArrayDeque(one of the way is using circular Array)
