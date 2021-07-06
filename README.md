@@ -33,7 +33,7 @@ Implementation of Data structures And ALgorithms.
 	7. remove(K) - remove(K,V)
 	8. keySet() -  values()   - entrySet()
 	9. traversal in map 
-   	for( Entry<String, Integer> e :  m.entrySet())
+   	for( Map.Entry<String, Integer> e :  m.entrySet())
 		System.out.println(e.getKey() +  " " +  e.getValue());
 
 #### COUNT DISTINCT ELEMENTS
