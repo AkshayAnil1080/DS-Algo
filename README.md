@@ -68,6 +68,9 @@ Implementation of Data structures And ALgorithms.
 	VVImp: convert array of char[] to String : String str = String.valueOf(char)
 	       Convert String(str) into  array of Charcters = char str[] = S.toCharArray();
 	       
+	VVVV IMP : never use String res=""; res+='somecharacter'  - internal takes O(n)	  
+	instead make a array of char and return as String;  1. char ans[] = new char[n];   // feed the input// return new String(ans);
+	
 	String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences. It can  have characters 	and 		substrings inserted in the middle or appended to the end.
 	VVImp: convert array of integers into  String
 	StringBuffer s = new StringBuffer();
