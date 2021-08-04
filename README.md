@@ -64,6 +64,7 @@ Implementation of Data structures And ALgorithms.
 	Eg. s1="richdadpoordad" , s2="dad" -> s1.indexOf(s2,2) -> 11.
 	
 	string.valueOf() -  method converts different types of values into string.
+	char c='1'; int num =Character.getNumericValue(c);  - output :1
 	
 	VVImp: convert array of char[] to String : String str = String.valueOf(char)
 	       Convert String(str) into  array of Charcters = char str[] = S.toCharArray();
