@@ -35,6 +35,7 @@ Implementation of Data structures And ALgorithms.
 	9. traversal in map 
    	for( Map.Entry<String, Integer> e :  m.entrySet())
 		System.out.println(e.getKey() +  " " +  e.getValue());
+	10. map.put(a[i],m.getOrDefault(a[i],0)+1);
 
 #### COUNT DISTINCT ELEMENTS
 	NaiveM1 - TC:O(n^2) , ASC:O(1)
