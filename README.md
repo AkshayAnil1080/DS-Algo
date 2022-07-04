@@ -36,6 +36,14 @@ Implementation of Data structures And ALgorithms.
    	for( Map.Entry<String, Integer> e :  m.entrySet())
 		System.out.println(e.getKey() +  " " +  e.getValue());
 	10. map.put(a[i],m.getOrDefault(a[i],0)+1);
+	11. Sort map by key or value in desc order and then accessing it
+	List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());          // basically providing index to each entry set.
+        list.sort(Map.Entry.comparingByValue((a, b) -> b - a));	 //using sort. list to get inside map using map.entry to access value and then comparator call(a,b)->b-a; a-b for asc order
+	for(int i=0; i<k ;i++)
+        {
+            res[i] = list.get(i).getKey();   // list.get(i) is actually an entry set - to get a key from it we use getKey and getValue
+        }
+        // System.out.println(list);  // [1=3,2=2,3=1] // sort by value in desc order
 
 #### COUNT DISTINCT ELEMENTS
 	NaiveM1 - TC:O(n^2) , ASC:O(1)
